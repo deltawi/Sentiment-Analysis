@@ -1,0 +1,26 @@
+<head>
+  <title>youppi</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+
+  {{> calc}}
+</body>
+
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>
+
+
+<template name="calc">
+	      <form>
+        	<input type="text" name="a" placeholder="Type to add a number A" />
+        	<input type="text" name="b" placeholder="Type to add a number B" />
+        	<input type="submit" value="Calculate">
+        	<p>sum is {{sum}} </p>
+      </form>
+</template>
