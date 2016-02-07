@@ -3,11 +3,35 @@
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
+  <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-collapse navbar-menubuilder">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="/">Home</a>
+                </li>
+                <li><a href="/products">Sentiment Analysis</a>
+                </li>
+                <li><a href="/about-us">About Us</a>
+                </li>
+                <li><a href="/contact">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<br/>
+<div class="the-app-page">
+<h2>Welcome to Sentiment analysis.</h2>
+<br/>
+<p>This application can analyse comment and predict if this one has positive/negative insight.</p>
+<p>How to use it ? The answer is simple. Tape your comment in the text field below.</p>
 
-  {{> hello}}
+<br/>
+  <!--{{> hello}} -->
 
   {{> calc}}
+
+</div>
 </body>
 
 <template name="hello">
@@ -17,10 +41,13 @@
 
 
 <template name="calc">
-	      <form>
+	      <form class='main-form'>
+        <p>
         	<input type="text" name="a" placeholder="Type to add a number A" />
-        	<input type="text" name="b" placeholder="Type to add a number B" />
-        	<input type="submit" value="Calculate">
+        </p>
+        <p>	<input type="text" name="b" placeholder="Type to add a number B" /> </p>
+
+        <p>	<input class="btn btn-primary" type="submit" value="Calculate"> </p>
         	<p>sum is {{sum}} </p>
       </form>
 </template>
